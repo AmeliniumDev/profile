@@ -1,0 +1,129 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+body {
+  background-color: #e5dfdf;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* if you want the light version */
+  color: #202020;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-size: 30px;
+  line-height: 2;
+  color: #101010;
+}
+
+h2 {
+  font-family: 'Poppins';
+  font-size: 20px;
+  line-height: 1.8;
+  color: #101010;
+}
+
+a {
+  color: #080808;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px
+}
+
+a:hover {
+  color: black;
+}
+
+#profile {
+ height: 120px;
+ width: 120px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.shadowed {
+  box-shadow: 1px 1px 1px grey;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 600px;        /* Set the width */
+  margin: 0 auto;      /* Set automatic margins on right/left */
+}
+
+.card {
+  margin: 50px auto;
+  border: 1px solid #e5dfdf;
+  background: #F5F5F5;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px rgba(0,0,0,.1);
+}
+
+
+.list-inline li {
+  display: inline-block;
+}
+
+.list-inline i {
+  list-style: none;
+  /*padding-left: 0px;*/
+  font-size: 20px;
+}
+
+.fab {
+  display: inline-block;
+  padding: 20px;
+ /* position: relative;*/
+}
+
+.list-inline i:hover {
+  color: #FF1493;
+}
+
+.btn-pink {
+  background-color: #FF1493;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.introduction {
+  margin-bottom: 40px;
+}
+
+.style-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-icons i:hover {
+  color: #FF1493;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
