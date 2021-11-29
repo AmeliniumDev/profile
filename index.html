@@ -2,72 +2,250 @@
 <html>
   <head>
     <!-- Page's intelligence = meta tags -->
-    <title>My profile</title>
+    <title>Amelia Urbanowicz - Front-End Web Developer</title>
     <!-- HTML Skeleton - head & Google -->
-    <meta name="description" content="The greatest profile ever.">
+    <meta name="description" content="My profile">
     <!-- Special characters -->
     <meta charset="utf-8">
     <!-- HTML Skeleton - head & Facebook -->
-    <meta property="og:title" content="My profile - Amelia Urbanowicz">
+    <meta property="og:title" content="Amelia Urbanowicz - Front-End Web Developer">
     <meta property="og:image" content="facebook-card.jpg">
-    <meta property="og:description" content="The greatest profile ever.">
-    <meta property="og:site_name" content="My face">
+    <meta property="og:description" content="My profile">
+    <meta property="og:site_name" content="">
     <!-- HTML Skeleton - head & Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@AmeliaUrbanowicz">
-    <meta name="twitter:title" content="My profile - Amelia Urbanowicz">
-    <meta name="twitter:description" content="The greatest profile ever.">
+    <meta name="twitter:title" content="Amelia Urbanowicz - Front-End Web Developer">
+    <meta name="twitter:description" content="My profile">
     <meta name="twitter:creator" content="@AmeliaUrbanowicz">
     <meta name="twitter:image:src" content="http://twitter-card.jpg">
+    <!-- Google Fonts: Lato / Titillium Web / Spectral (serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Spectral:wght@200;300;400&family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- Fontawesome Stylesheet -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- My stylesheet -->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <style>
+      body {
+        background-image: url("images/web-development.jpg");
+      }
+    </style> -->
   </head>
   <body>
     <!-- Page's content = displayed on the page -->
-    <div class="container">
-      <!-- title - h1 -->
-      <div class="card text-center">
-        <h1>Hello, I'm Amelia!</h1>
-        <!-- photo -->
-        <img src="images/profile.png" alt="My face" id="profile" class="img-circle shadowed">
-        <!-- text -->
-        <p class="introduction">I've just learnt how to built my <em>first</em> website. <strong>Mindblowing.</strong></p>
-        <!-- link/button -->
-        <a href="https://www.lewagon.com" target="_blank" class="btn-pink">Learn more</a>
-        <!-- Follow me -->
-      </div>
-      <div class="card text-center">
-        <h2>Follow me</h2>
-        <div class="style-icons">
-          <!-- <i class="fab fa-facebook-f"></i> -->
-          <a href="https://www.linkedin.com/in/amelia-urbanowicz-b56998104/" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <!-- <i class="fab fa-twitter"></i> -->
-        </div>
-        <!-- Unordered list -->
-        <!-- <ul class="list-inline">
-          <li>
-            <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-        </ul> -->
-      </div>
-    </div>
+    <!-- <div class="main-container bg" style="background-image: url('images/web-development.jpg');"> -->
+    <div class="main-container">
 
+      <!-- FIRST LINE DIV -->
+      <div class="container">
+        <div class="card-left-body">
+          <!-- Photo & Social DIV (left) -->
+          <div class="card-left-small center-flex column-flex">
+            <!-- My photo -->
+            <img src="images/profile.png" alt="My face" id="profile-picture" class="shadowed-tart-orange">
+            <!-- Social -->
+            <div class="row-flex">
+              <div class="style-icons">
+                <a href="https://www.linkedin.com/in/amelia-urbanowicz-b56998104/" target="_blank">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="style-icons">
+                <a href="https://www.instagram.com/urbanameli/?hl=en-gb" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+              <div class="style-icons">
+                <a href="https://github.com/AmeliniumDev" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-right-body">
+          <!-- Page Title DIV (right)-->
+          <div id="card-relative" class="card-right-small single-height">
+            <h1>Hello! I'm Amelia, <br> a front-end web developer <br> based in</h1>
+            <img src="images/subway-london.png" title="London - Big Ben" alt="London - Big Ben" id="london-icon" class="">
+          </div>
+        </div>
+      </div>
+         <!-- Statement DIV -->
+ <!--        <div class="card-right">
+          <h2>STATEMENT</h2>
+          <p>I’m a diligent professional with over 4 years of financial & administrative experience with a demonstrated history of working in the research industry. I have a proven track record of complex problem solving and accurate finance processing. I’m mildly obsessed with creating Excel trackers and organising my workload. However, there’s only so far a spreadsheet can take you. I knew the only way I can make a real change is to learn how to code. Hence, my enrolment at Le Wagon where my team developed a team planner. Skilled in Ruby on Rails, Ruby, HTML, CSS, JavaScript, and Github.</p>
+        </div> -->
+
+      <!-- SECOND LINE DIV - PROJECTS -->
+      <div class="container">
+      <div class="card-center text-center">
+        <h2>PROJECTS</h2>
+        <!-- Projects Carousel DIV (centre) -->
+        <div class="carousel">
+          <div class="carousel-item">
+            <h3 class="no-margin">STND</h3>
+            <h4 class="no-margin">Team task manager</h4>
+            <h4 class="dates-color no-top-margin">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem fringilla, viverra elit ac, maximus justo. Nullam sit amet scelerisque libero. Vestibulum iaculis sodales auctor. Duis et augue nisl.</p>
+            <a href="https://github.com/AmeliniumDev/STND" target="_blank" class="btn-tart-orange">GitHub - STND</a>
+          </div>
+          <div class="carousel-item">
+            <h3 class="no-margin">Rent Art</h3>
+            <h4 class="no-margin">Marketplace with art rental</h4>
+            <h4 class="dates-color no-top-margin">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem fringilla, viverra elit ac, maximus justo. Nullam sit amet scelerisque libero. Vestibulum iaculis sodales auctor. Duis et augue nisl.</p>
+            <a href="https://github.com/sopdam/rentart" target="_blank" class="btn-tart-orange">GitHub - RentArt</a>
+          </div>
+          <div class="carousel-item">
+            <h3 class="no-margin">Rails Mister Cocktail</h3>
+            <h4 class="no-margin">Marketplace with art rental</h4>
+            <h4 class="dates-color no-top-margin">Lorem Ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem fringilla, viverra elit ac, maximus justo. Nullam sit amet scelerisque libero. Vestibulum iaculis sodales auctor. Duis et augue nisl.</p>
+            <a href="https://github.com/sopdam/rentart" target="_blank" class="btn-tart-orange">GitHub - RMC</a>
+          </div>
+          <div class="carousel-item">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem fringilla, viverra elit ac, maximus justo. Nullam sit amet scelerisque libero. Vestibulum iaculis sodales auctor. Duis et augue nisl.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- THIRD LINE DIV - SKILLS + LANGUAGES + INTERESTS & JOBS + EDUCATION -->
+      </div>
+
+
+      <!-- FIFTH LINE DIV - SKILLS + LANGUAGES + INTERESTS & EDUCTATION-->
+      <div class="container">
+        <!-- Skills [top] + Languages [middle] + Interests [bottom] (left) -->
+        <div class="card-left-body column-flex">
+          <!-- Skills -->
+          <div class="card-left-small">
+            <h2>SKILLS</h2>
+            <ul>
+              <li class="malachite-color bolder-text">Expert</li>
+              <li>Excel, Word, Outlook, PowerPoint</li>
+              <li class="robin-egg-blue-color bolder-text">Proficient</li>
+              <li>Ruby on Rails, HTML, CSS, GitHub</li>
+              <li>Sage</li>
+              <li class="yellow-munsell-color bolder-text">Novice</li>
+              <li>JavaScript, SQL</li>
+              <li>EDGE Clinical Research</li>
+            </ul>
+          </div>
+          <!-- Languages -->
+          <div class="card-left-small">
+            <h2>LANGUAGES</h2>
+            <ul>
+              <li class="malachite-color bolder-text">Native language</li>
+              <li>Polish</li>
+              <li class="robin-egg-blue-color bolder-text">Fluent</li>
+              <li>English</li>
+            </ul>
+          </div>
+          <!-- Interests -->
+          <div class="card-left-small">
+            <h2>INTERESTS</h2>
+            <div class="interests-div">
+              <img src="images/coding.png" title="coding" alt="coding" id="" class="interest-icon">
+              <img src="images/travel-luggage.png" title="travelling" alt="travelling" id="" class="interest-icon">
+              <img src="images/landscape.png" title="nature" alt="nature" id="" class="interest-icon">
+              <img src="images/cooking.png" title="cooking" alt="cooking" id="" class="interest-icon">
+              <img src="images/gardening.png" title="gardening" alt="gardening" id="" class="interest-icon">
+              <img src="images/open-book.png" title="reading" alt="reading" id="" class="interest-icon">
+              <img src="images/watching-a-movie.png" title="watching movies" alt="watching movies" id="" class="interest-icon">
+              <img src="images/board-game.png" title="board games" alt="board games" id="" class="interest-icon">
+            </div>
+          </div>
+        </div>
+
+        <!-- Jobs [top] + Edducation [bottom] (right) -->
+        <div class="card-right-body column-flex">
+          <!-- Jobs -->
+          <div class="card-right-small text-center">
+            <h2>EMPLOYMENT</h2>
+            <!-- Jobs Carousel (center) -->
+            <div class="carousel">
+              <div class="carousel-item">
+                <h3 class="no-margin">King's College London</h3>
+                <h4 class="no-margin">Commercial Trials Facilitator</h4>
+                <h4 class="dates-color no-top-margin">May 2021 - October 2021</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sem fringilla, viverra elit ac, maximus justo. Nullam sit amet scelerisque libero. Vestibulum iaculis sodales auctor. Duis et augue nisl.</p>
+                <a href="https://www.kcl.ac.uk/" target="_blank" class="btn-tart-orange">King's College London</a>
+              </div>
+              <div class="carousel-item">
+                <h3 class="no-margin">King's College London</h3>
+                <h4 class="no-margin">Commercial Trials Finance Facilitator</h4>
+                <a href="https://www.kcl.ac.uk/" target="_blank" class="btn-tart-orange">King's College London</a>
+              </div>
+              <div class="carousel-item">
+                <h3 class="no-margin">King's College London</h3>
+                <h4 class="no-margin">Commercial Trials Finance Assistant</h4>
+                <a href="https://www.kcl.ac.uk/" target="_blank" class="btn-tart-orange">King's College London</a>
+              </div>
+            </div>
+          </div>
+          <!-- Education -->
+          <div class="card-right-small">
+            <h2>EDUCATION</h2>
+              <h3 class="no-margin">Le Wagon</h3>
+              <h4 class="no-margin">Full stack web developer, Computer Programming</h4>
+              <h4 class="no-margin dates-color">October 2019 - March 2020</h4>
+              <p>24-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails. Projected final product includes designing, implementing, and shipping to production a clone of AirBnB and a Rails prototype of a future project.</p>
+              <a href="https://www.lewagon.com" target="_blank" class="btn-tart-orange">Le Wagon</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TEST DIV - LAST -->
+      <div class="container">
+        <div class="card-left-body">
+          <div class="card-left-small">
+            <h2>Lorem ipsum</h2>
+            <div class="carousel">
+              <div class="carousel-item">
+                <h3 class="no-margin">Lorem ipsum 1</h3>
+                <h4 class="no-margin"></h4>
+                <h4 class="no-margin dates-color"></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="carousel-item">
+                <h3 class="no-margin">Lorem ipsum 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="carousel-item">
+                <h3 class="no-margin">Lorem ipsum 3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page title DIV (right)-->
+        <div class="card-right-body">
+          <div class="card-right-small">
+            <h2>Lorem ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="footer-links">
+          <a href="https://github.com/AmeliniumDev"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/urbanameli/?hl=en-gb"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/amelia-urbanowicz-b56998104/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-copyright">
+          <div class="icon-credits-text">Icons made by <a href="https://www.flaticon.com/authors/wanicon" title="wanicon">wanicon</a>, <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a>, <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/bzzrincantation" title="BZZRINCANTATION">BZZRINCANTATION</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+      </div>
+    <!-- /div main-container -->
+    </div>
+    <!-- Script tags here -->
+    <script src="main.js"></script>
   </body>
 </html>
 <!-- end of file -->
